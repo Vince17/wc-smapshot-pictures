@@ -1,5 +1,5 @@
-import {LitElement, html, css} from 'lit';
-// import {LitElement, html, css} from 'https://unpkg.com/lit-html?module';
+// import {LitElement, html, css} from 'lit';
+import {LitElement, html, css} from 'https://unpkg.com/lit-html?module';
 
 export class ElSmapshot extends LitElement {
   static get styles() {
