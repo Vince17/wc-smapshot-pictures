@@ -1,10 +1,14 @@
 ### wc-smapshot-pictures
 
 ## Description
+
 Smapshot offers a web component that you can reuse to integrate into your website with a simple customizable element.
+
 Here is an overview:
+
 ![enter image description here](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/main/screenshot.png)
-**This web component create with [Lit Element](https://lit.dev/)**
+
+**This web component is created with [Lit Element](https://lit.dev/)**
 
 ## Setup
 Add the header tag script : 
