@@ -1,0 +1,128 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "element-smapshot",
+      "path": "./element_smapshot.js",
+      "attributes": [
+        {
+          "name": "lat",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "long",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "limit",
+          "type": "number",
+          "default": "10"
+        },
+        {
+          "name": "data",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "looping",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "lat",
+          "attribute": "lat",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "long",
+          "attribute": "long",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "limit",
+          "attribute": "limit",
+          "type": "number",
+          "default": "10"
+        },
+        {
+          "name": "data",
+          "attribute": "data",
+          "type": "array",
+          "default": "[]"
+        },
+        {
+          "name": "looping",
+          "attribute": "looping",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "map-smapshot",
+      "path": "./map_smapshot.js",
+      "attributes": [
+        {
+          "name": "lat",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "long",
+          "type": "number",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "lat",
+          "attribute": "lat",
+          "type": "number",
+          "default": "\"\""
+        },
+        {
+          "name": "long",
+          "attribute": "long",
+          "type": "number",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "my-element",
+      "path": "./docs\\my-element.bundled.js",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string"
+        },
+        {
+          "name": "count",
+          "type": "number"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string"
+        },
+        {
+          "name": "count",
+          "attribute": "count",
+          "type": "number"
+        },
+        {
+          "name": "updateComplete",
+          "type": "Promise<any> | undefined"
+        }
+      ]
+    }
+  ]
+}
