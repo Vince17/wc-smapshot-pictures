@@ -1,4 +1,5 @@
-import {html, css, LitElement} from 'https://unpkg.com/lit-element@2.2.0?module';
+//  import {html, css, LitElement} from 'https://unpkg.com/lit-element@2.2.0?module';
+import {html, css, LitElement} from 'lit';
 
 export class ElSmapshot extends LitElement {
   static get styles() {
@@ -154,7 +155,7 @@ export class ElSmapshot extends LitElement {
           ${this.data.map(({ id, url, title, date_shot_min }) => html` 
           <a target="_blank" href="https://smapshot.heig-vd.ch/visit/${id}" >
             <article>
-              <img class="picture" @click="${this.clickHandler}" src="${url}" >
+              <img class="picture" src="${url}">
               <p class="title">${title}</p>
               <p class="date">${date_shot_min}</p>
             </article>
