@@ -170,7 +170,6 @@ export class ElSmapshot extends LitElement {
   
   async retrieveImages() {
     const response = await fetch(`https://smapshot.heig-vd.ch/api/v1/images?latitude=${this.lat}&longitude=${this.long}&sortKey=distance&limit=${this.limit}`);
-    //  const response = await fetch(`http://localhost:1337/images?latitude=${this.lat}&longitude=${this.long}&sortKey=distance&limit=${this.limit}`);
     const data = await response.json();
     for (let picture of data.rows) {
       this.data.push({
