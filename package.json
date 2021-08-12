@@ -7,7 +7,7 @@
   "module": "my-element.js",
   "type": "module",
   "scripts": {
-    "build": "echo \"This is not a TypeScript project, so no need to build.\"",
+    "build": "rollup -c",
     "lint": "npm run lint:lit-analyzer && npm run lint:eslint",
     "lint:eslint": "eslint '**/*.js'",
     "lint:lit-analyzer": "lit-analyzer my-element.js",
@@ -36,7 +36,9 @@
   "dependencies": {
     "leaflet": "^1.7.1",
     "lit": "^2.0.0-rc.1",
-    "lit-element": "^3.0.0-rc.1"
+    "lit-element": "^3.0.0-rc.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-minify-html-literals": "^1.2.6"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
