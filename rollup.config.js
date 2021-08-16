@@ -6,6 +6,7 @@ import minifyHTML from 'rollup-plugin-minify-html-literals';
 // JavaScript modules and other ES2015+ features.
 const config = {
   input: 'element_smapshot.js',
+  input: 'map_smapshot.js',
   output: {
     dir: 'dist/components',
     format: 'es',
