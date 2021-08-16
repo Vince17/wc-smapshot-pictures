@@ -1,3 +1,4 @@
+#### Web Component smapshot
 ### wc-smapshot-pictures
 
 ## Description
@@ -29,3 +30,9 @@ There are 4 parameters in attribute :
 *Exemple (displays 15 pictures (looping)) with the coordinates of Yverdon):*
 
     <element_smapshot looping limit="15" lat="46.783502" long="6.644687"></element_smapshot>
+
+### wc-smapshot-map
+
+## Description
+
+https://carto.com/help/building-maps/basemap-list/
