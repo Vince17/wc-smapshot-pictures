@@ -1,38 +1,24 @@
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
-
-import summary from 'rollup-plugin-summary';
-import {terser} from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
-import replace from '@rollup/plugin-replace';
+import { terser } from 'rollup-plugin-terser';
+import minifyHTML from 'rollup-plugin-minify-html-literals';
 
-export default {
-  input: 'my-element.js',
+// The main JavaScript bundle for modern browsers that support
+// JavaScript modules and other ES2015+ features.
+const config = {
+  input: 'element_smapshot.js',
   output: {
-    file: 'my-element.bundled.js',
-    format: 'esm',
-  },
-  onwarn(warning) {
-    if (warning.code !== 'THIS_IS_UNDEFINED') {
-      console.error(`(!) ${warning.message}`);
-    }
+    dir: 'dist/components',
+    format: 'es',
   },
   plugins: [
-    replace({'Reflect.decorate': 'undefined'}),
+    minifyHTML(),
     resolve(),
-    terser({
-      ecma: 2017,
-      module: true,
-      warnings: true,
-      mangle: {
-        properties: {
-          regex: /^__/,
-        },
-      },
-    }),
-    summary(),
   ],
+  preserveEntrySignatures: false,
 };
+
+if (process.env.NODE_ENV !== 'development') {
+  config.plugins.push(terser());
+}
+
+export default config;
