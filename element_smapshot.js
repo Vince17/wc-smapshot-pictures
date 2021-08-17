@@ -1,4 +1,3 @@
-//  import {html, css, LitElement} from 'https://unpkg.com/lit-element@2.2.0?module';
 import {html, css, LitElement} from 'lit';
 
 export class ElSmapshot extends LitElement {

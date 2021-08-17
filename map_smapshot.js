@@ -1,7 +1,6 @@
-import {html, css, LitElement} from 'lit';  
-//  https://cdn.skypack.dev/lit-element
+import {html, css, LitElement} from 'lit';
 import {map as createMap, tileLayer, geoJSON, circle} from './node_modules/leaflet/dist/leaflet-src.esm.js'; 
-//  import 'https://cdn.skypack.dev/leaflet/dist/leaflet.js';
+import './node_modules/leaflet/dist/leaflet.css';
 
 export class Map extends LitElement{
 	static get styles() {
@@ -131,7 +130,6 @@ export class Map extends LitElement{
 
 	render() {
 		return html`
-			<link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css">
 			<div id="mapid"></div>
 		`;
 	}

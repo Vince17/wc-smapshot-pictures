@@ -9,6 +9,15 @@ import {legacyPlugin} from '@web/dev-server-legacy';
 export default {
   nodeResolve: true,
   preserveSymlinks: true,
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        options: {import: true}
+      },
+    ],
+  },
   plugins: [
     legacyPlugin({
       polyfills: {
