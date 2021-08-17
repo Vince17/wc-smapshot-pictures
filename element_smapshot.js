@@ -188,7 +188,7 @@ export class ElSmapshot extends LitElement {
         date_shot_min: picture.date_shot_min,
         title: picture.title,
         url: picture.media.image_url})
-    };
+    }
     this.requestUpdate();
     this.shadowRoot.getElementById('loader').style.display = 'none';
     this.shadowRoot.getElementById('carousel').style.display = 'flex';

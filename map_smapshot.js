@@ -1,10 +1,12 @@
 import {html, css, LitElement} from 'lit';
-import {map as createMap, tileLayer, geoJSON, circle} from './node_modules/leaflet/dist/leaflet-src.esm.js'; 
-import './node_modules/leaflet/dist/leaflet.css';
+import {map as createMap, tileLayer, geoJSON, circle} from './node_modules/leaflet/dist/leaflet-src.esm.js';
+import leafletCSS from 'leaflet/dist/leaflet.css';
 
 export class Map extends LitElement{
 	static get styles() {
-		return [css`
+		return [
+			leafletCSS,
+			css`
 			:host {
 					display:block;
 			}
@@ -56,7 +58,7 @@ export class Map extends LitElement{
 					const dataID = await resID.json();
 					for (let dataPicture of dataID.rows) {
 						this.id_picture = dataPicture.id;
-					};
+					}
 					try {
 							const [res1, res2] = await Promise.all ([
 									fetch(`https://smapshot.heig-vd.ch/api/v1/images/${this.id_picture}/footprint`),
@@ -71,23 +73,23 @@ export class Map extends LitElement{
 											"type": "Polygon",
 											"coordinates": coords}
 									});
-							};
+							}
 							const data2 = await res2.json();
 							const image = data2.rows[0];
 							this.urlPicture = image.media.image_url;
 							this.longitude = image.longitude;
 							this.latitude =  image.latitude;
 							this.title = image.title;
-							
+
 							const mapEl = this.shadowRoot.querySelector('#mapid');
 							let map = createMap(mapEl).setView([46.78, 6.64], 13);
 							let polygon = geoJSON(this.dataGeoJSON,
-									{ 
+									{
 										color: this.colorStyle,
 										weight: 2,
 										opacity: 0.65
 									}).addTo(map);
-							let circle1 = circle([this.latitude, this.longitude], 
+							let circle1 = circle([this.latitude, this.longitude],
 									{
 										color: this.colorStyle,
 										fillOpacity: 0.7,
