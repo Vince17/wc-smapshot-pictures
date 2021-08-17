@@ -49,7 +49,7 @@ There are 4 parameters in attribute :
 
 By default the web component detects the device theme to switch to light/dark mode :
 
-![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_dark.png)
+![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_light_dark.png)
 
 *Exemple (displays 15 pictures (looping)) with the coordinates of Yverdon):*
 
@@ -103,7 +103,7 @@ Basemap of the web component : https://carto.com/help/building-maps/basemap-list
 
 By default the web component detects the device theme to switch to light/dark mode :
 
-![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_map_dark.png)
+![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_map_light_dark.png)
 
 *Exemple :*
 
