@@ -65,7 +65,7 @@ There are 4 parameters in attribute :
 
 Basemap of the web component : https://carto.com/help/building-maps/basemap-list/
 By default the web component detects the device theme to switch to light/dark mode :
-![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_dark_map.png) 
+![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_map_dark.png) 
 *Exemple :*
 
 	<map-smapshot lightMode colorStyle='red' attributionCust='HEIG-VD'  colorStyle='#c10000' urlMapLight='https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png' original_id='VD1510ChateauDOex'></map-smapshot>
