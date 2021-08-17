@@ -12,7 +12,7 @@ Smapshot offers a web component that you can reuse to integrate into your websit
 You have two different web components, the first one is an overview of the photos available on smapshot and the second one displays a map with the footprint of a specific smapshot photo.
 
 Here is an overview of the first web component :
-![enter image description here](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/main/screenshot.png)
+![enter image description here](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot.png)
 ### Setup
 
 Add the header tag script :
@@ -32,7 +32,7 @@ There are 4 parameters in attribute :
 - darkMode (to force dark mode)
 
 By default the web component detects the device theme to switch to light/dark mode :
-![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/main/screenshot_dark.png)
+![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_dark.png)
 *Exemple (displays 15 pictures (looping)) with the coordinates of Yverdon):*
 
 	<element_smapshot looping limit="15" lat="46.783502" long="6.644687"></element_smapshot>
@@ -43,7 +43,7 @@ By default the web component detects the device theme to switch to light/dark mo
 The second web components displays a map with the footprint of a specific smapshot photo.
 
 Here is an overview of the second web component :
-![enter image description here](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/main/screenshot_map.png) 
+![enter image description here](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_map.png) 
 ### Setup
 
 Add the header tag script :
@@ -65,7 +65,7 @@ There are 4 parameters in attribute :
 
 Basemap of the web component : https://carto.com/help/building-maps/basemap-list/
 By default the web component detects the device theme to switch to light/dark mode :
-![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/main/screenshot_dark_map.png) 
+![The dark mode](https://raw.githubusercontent.com/Vince17/wc-smapshot-pictures/master/screenshot_dark_map.png) 
 *Exemple :*
 
 	<map-smapshot lightMode colorStyle='red' attributionCust='HEIG-VD'  colorStyle='#c10000' urlMapLight='https://{s}.basemaps.cartocdn.com/rastertiles/light_all/{z}/{x}/{y}.png' original_id='VD1510ChateauDOex'></map-smapshot>
