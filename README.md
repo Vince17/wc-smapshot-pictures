@@ -24,9 +24,7 @@ Each photo is clickable and redirects to the photo on [smapshot.heig-vd.ch](http
 
 Add the script tag with the CDN to your header :
 
-
-	<script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/element_smapshot.js"></script>
-  
+	<script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/dist/components/element_smapshot.js"></script>
 
 To use this web component, you must insert this tag in your HTML :
   
@@ -78,7 +76,7 @@ You can click on the circle on the map to see a preview (popup) of the photo and
 Add the script tag with the CDN to your header :
 
 
-	<script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/map_smapshot.js"></script>
+	<script type="module" src="https://cdn.jsdelivr.net/gh/Vince17/wc-smapshot-pictures@master/dist/components/map_smapshot.js"></script>
  
 
 To use this web component, you must insert this tag in your HTML :
