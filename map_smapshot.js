@@ -95,9 +95,9 @@ export class Map extends LitElement{
 										fillOpacity: 0.7,
 										radius: 140
 									}).addTo(map);
-							circle1.bindPopup(`<a style="text-decoration: none; font-weight: 600;" target="_blank" href="https://smapshot.heig-vd.ch/visit/${this.id_picture}">
-																<img style="width:100%" src=${this.urlPicture}></img>
-																<br><p style="margin:0; padding:0">${this.title}</p></a>`).closePopup();
+							circle1.bindPopup(`<a style="width: 50%; text-decoration: none;" target="_blank" href="https://smapshot.heig-vd.ch/visit/${this.id_picture}">
+																<img style="width: 100%" src=${this.urlPicture}></img>
+																<br><p style="text-align:center; font-weight: 600; margin:0; padding: 0;">${this.title}</p></a>`).closePopup();
 							map.fitBounds(polygon.getBounds());
 							map.addLayer(tileLayer(this.mapLayer(), { minZoom: 4, attribution: `<a target="_blank" href="https://smpashot.heig-vd.ch/">Smapshot</a> | ${this.attributionCust}`}));
 					} catch (err) { 
